@@ -1,0 +1,102 @@
+.contact {
+  direction: rtl;
+  margin: auto;
+  background-color: #f7f8fc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-header {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 113, 0, 1) 0%,
+    rgba(251, 95, 23, 1) 35%,
+    rgba(249, 201, 124, 1) 100%
+  );
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact-header h2 {
+  font-size: 26px;
+  padding: 0.4rem;
+  color: #fff;
+  text-align: center;
+  font-family: Varela;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.2rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact button {
+  width: 85%;
+  margin: 1.2rem;
+}
+
+.choises {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.2rem;
+}
+
+.choises select:first-child {
+  margin-left: 0.5rem;
+}
+
+.success-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem auto;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+}
+
+.success-msg button {
+  margin-top: 5rem;
+}
+
+.form-message {
+  font-size: 10px;
+  padding-top: 0;
+}
+.form-message.valid {
+  color: $success-color;
+}
+.form-message.invalid {
+  color: $danger-color;
+}
+
+.has-error {
+  border: 1px solid $danger-color !important;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 400px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    width: 300px;
+    height: 450px;
+  }
+  .hide {
+    display: none;
+  }
+
+  .contact-header h2 {
+    font-size: 1.2rem;
+  }
+}

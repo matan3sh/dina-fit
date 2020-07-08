@@ -1,0 +1,50 @@
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.address {
+  margin-top: 2rem;
+  direction: rtl;
+}
+
+.address h2 {
+  font-family: Varela;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.waze-btn {
+  width: 65px;
+  height: 65px;
+  background: #7ec0ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 12px;
+  bottom: 65px;
+  transition: background 0.25s;
+}
+
+.waze-btn:active {
+  background: #083e64;
+}
+
+.waze img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 8px;
+}

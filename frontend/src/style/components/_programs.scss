@@ -1,0 +1,51 @@
+.programs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.program-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 290px;
+  height: 420px;
+  direction: rtl;
+  font-family: 'Rubik';
+  margin-bottom: 2rem;
+}
+
+.tag {
+  background: #777;
+  border-radius: 50px;
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 30px;
+}
+
+.tag-teal {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 113, 0, 1) 0%,
+    rgba(251, 95, 23, 1) 35%,
+    rgba(249, 201, 124, 1) 100%
+  );
+}
+
+.program-desc {
+  position: relative;
+  bottom: 15px;
+}
+
+.program-card button {
+  margin: 0 auto;
+}
