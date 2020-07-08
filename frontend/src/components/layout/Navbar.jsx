@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loadUser } from '../../store/auth/actions';
 
@@ -17,6 +17,12 @@ const Navbar = ({ loadUser }) => {
             <span>Dina</span>Fit
           </Link>
         </li>
+        <li className='logo-large'>
+          <Link to='/'>
+            {' '}
+            <span>Dina</span>Fitness Trainer
+          </Link>
+        </li>
         <li className='phone-number'>
           <h2>
             <span className='number'>052-6412792 </span>
@@ -28,16 +34,19 @@ const Navbar = ({ loadUser }) => {
         </li>
         <div className='items'>
           <li>
-            <a href='#/'>בית</a>
+            <NavLink to='/' exact activeClassName='active-nav-link'>
+              דף הבית
+            </NavLink>
           </li>
           <li>
-            <a href='#/'>אודות</a>
+            <NavLink to='/programs' exact activeClassName='active-nav-link'>
+              סוגי אימונים
+            </NavLink>{' '}
           </li>
           <li>
-            <a href='#/'>שירותים</a>
-          </li>
-          <li>
-            <a href='#/'>צור קשר</a>
+            <NavLink to='/address' exact activeClassName='active-nav-link'>
+              הגעה לאימון
+            </NavLink>{' '}
           </li>
         </div>
       </ul>

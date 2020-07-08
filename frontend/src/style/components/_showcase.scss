@@ -20,24 +20,24 @@
 #showcase h1 {
   margin-top: 20px;
   font-size: 72px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-weight: 900;
   font-family: Varela;
 }
 
 #showcase p {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 600;
   font-family: Varela;
 }
 
 #showcase button {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
   font-size: 1.4rem;
 }
 
 #showcase i {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .order-now {
@@ -51,6 +51,13 @@
     margin-top: 30px;
     font-size: 55px;
   }
+  #showcase p {
+    font-size: 22px;
+  }
+  #showcase button {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+  }
   .box {
     position: absolute;
     top: 60%;
@@ -59,12 +66,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 404px) {
   #showcase h1 {
-    font-size: 36px;
+    margin-top: 20px;
+    font-size: 38px;
   }
-
   #showcase p {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  #showcase button {
+    margin-top: 2.4rem;
   }
 }

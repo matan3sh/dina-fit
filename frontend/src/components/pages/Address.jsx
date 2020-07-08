@@ -7,10 +7,10 @@ const Address = () => {
   return (
     <>
       <Showcase />
-      <div className='address'>
-        <h2>מרכז דפני, סנונית 18, נס ציונה.</h2>
-      </div>
       <div className='map'>
+        <div className='address'>
+          <h2>מרכז דפני, סנונית 18, נס ציונה.</h2>
+        </div>
         <Map />
       </div>
       <div className='waze'>
@@ -20,6 +20,7 @@ const Address = () => {
           </a>
         </div>
       </div>
+      <div className='more-height'></div>
     </>
   );
 };

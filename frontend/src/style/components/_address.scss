@@ -1,11 +1,13 @@
 .map {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
   border-radius: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: auto;
 }
 
 .address {
@@ -47,4 +49,8 @@
   height: 45px;
   position: relative;
   top: 8px;
+}
+
+.more-height {
+  height: 200px;
 }

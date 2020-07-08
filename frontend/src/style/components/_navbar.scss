@@ -20,6 +20,7 @@ nav ul li.logo {
   flex: 1;
   font-size: 1.8rem;
   font-weight: 900;
+  display: none;
 }
 
 .logo span {
@@ -28,19 +29,33 @@ nav ul li.logo {
   font-weight: 800;
 }
 
+nav ul li.logo-large {
+  flex: 2;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: block;
+}
+
+.logo-large span {
+  color: #f47100;
+  font-family: Rubik;
+  font-weight: 800;
+}
+
 nav ul div.items {
   padding: 0 25px;
   display: inline-flex;
+  font-family: Varela;
 }
 
 nav ul div.items a {
   text-decoration: none;
   font-size: 18px;
-  padding: 0 12px;
+  padding: 10px 12px;
 }
 
 nav ul div.items a:hover {
-  color: rgb(117, 109, 155);
+  color: #f47100;
 }
 
 nav ul .search-icon {
@@ -89,8 +104,9 @@ nav ul .search-icon .icon span {
   font-family: Varela;
 }
 
-.number {
-  font-family: Roboto;
+.active-nav-link {
+  border-bottom: #ffffff 1px solid;
+  transition: border-bottom 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -107,16 +123,25 @@ nav ul .search-icon .icon span {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  nav ul li.logo {
+    display: block;
+  }
+  nav ul li.logo-large {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 755px) {
   .phone-number {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     flex: 1;
   }
 }
 
 @media screen and (max-width: 500px) {
   .phone-number {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     flex: 1;
     margin-left: 2rem;
   }

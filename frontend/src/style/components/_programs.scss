@@ -1,11 +1,8 @@
 .programs-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem 1rem 0 12rem;
   text-align: right;
-  margin-bottom: 3rem;
 }
 
 .program-card {
@@ -14,7 +11,7 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 290px;
-  height: 420px;
+  height: 440px;
   direction: rtl;
   font-family: 'Rubik';
   margin-bottom: 2rem;
@@ -48,4 +45,16 @@
 
 .program-card button {
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .programs-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    text-align: right;
+    margin-bottom: 3rem;
+  }
 }

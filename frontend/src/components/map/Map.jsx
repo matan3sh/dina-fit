@@ -4,7 +4,7 @@ import mapStyle from './mapStyle';
 
 const mapContainerStyle = {
   height: '30vh',
-  width: '100vw'
+  width: '100%'
 };
 const options = {
   styles: mapStyle,

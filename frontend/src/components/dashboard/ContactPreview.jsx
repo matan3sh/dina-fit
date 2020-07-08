@@ -12,6 +12,10 @@ const ContactPreview = ({ contact, onDelete }) => {
       <div className='pricing-plan__description'>
         <ul className='pricing-plan__list'>
           <li className='pricing-plan__feature'>
+            <span>גיל - </span>
+            {contact.age}
+          </li>
+          <li className='pricing-plan__feature'>
             <span>מגדר - </span>
             {contact.gender === 'female' ? 'נקבה' : 'זכר'}
           </li>
